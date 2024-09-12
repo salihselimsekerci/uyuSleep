@@ -16,6 +16,8 @@
 		369D83E42C92E30300DA793B /* SignUpWithPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D83E32C92E30300DA793B /* SignUpWithPhoneView.swift */; };
 		369D83E62C92E40A00DA793B /* SignUpWithPhoneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D83E52C92E40A00DA793B /* SignUpWithPhoneViewModel.swift */; };
 		369D83EB2C92E64500DA793B /* Extension_Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D83EA2C92E64500DA793B /* Extension_Color.swift */; };
+		369D83EE2C92EB5600DA793B /* PersonInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D83ED2C92EB5600DA793B /* PersonInfoView.swift */; };
+		369D83F02C92EBA800DA793B /* PersonInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D83EF2C92EBA800DA793B /* PersonInfoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		369D83E32C92E30300DA793B /* SignUpWithPhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpWithPhoneView.swift; sourceTree = "<group>"; };
 		369D83E52C92E40A00DA793B /* SignUpWithPhoneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpWithPhoneViewModel.swift; sourceTree = "<group>"; };
 		369D83EA2C92E64500DA793B /* Extension_Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_Color.swift; sourceTree = "<group>"; };
+		369D83ED2C92EB5600DA793B /* PersonInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoView.swift; sourceTree = "<group>"; };
+		369D83EF2C92EBA800DA793B /* PersonInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 			children = (
 				369D83DD2C92D7C500DA793B /* FirstView.swift */,
 				369D83E32C92E30300DA793B /* SignUpWithPhoneView.swift */,
+				369D83ED2C92EB5600DA793B /* PersonInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -110,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				369D83E52C92E40A00DA793B /* SignUpWithPhoneViewModel.swift */,
+				369D83EF2C92EBA800DA793B /* PersonInfoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -197,8 +203,10 @@
 				369D83E42C92E30300DA793B /* SignUpWithPhoneView.swift in Sources */,
 				369D83EB2C92E64500DA793B /* Extension_Color.swift in Sources */,
 				369D83CE2C92D53500DA793B /* uyuSleepApp.swift in Sources */,
+				369D83EE2C92EB5600DA793B /* PersonInfoView.swift in Sources */,
 				369D83E02C92DCC300DA793B /* Constants.swift in Sources */,
 				369D83E62C92E40A00DA793B /* SignUpWithPhoneViewModel.swift in Sources */,
+				369D83F02C92EBA800DA793B /* PersonInfoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

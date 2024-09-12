@@ -21,7 +21,7 @@ struct SignUpWithPhoneView: View {
     @State private var showAlert: Bool = false
     @State private var alertMessage: String = ""
     
-    @State private var showHomeView: Bool = false
+    @State private var showPersonInfoView: Bool = false
     
     //MARK: - View
     
@@ -74,10 +74,48 @@ struct SignUpWithPhoneView: View {
             .alert(isPresented: $showAlert) {
                 Alert(title: Text("Hata"), message: Text(alertMessage), dismissButton: .default(Text("Tamam")))
             }
-            .fullScreenCover(isPresented: $showHomeView) {
-                    //HomeView()
+            .fullScreenCover(isPresented: $showPersonInfoView) {
+                PersonInfoView()
             }
         }
+        
+        // ok yönleri ile sayfa geçişleri için
+        HStack{
+            // birinci ok
+            VStack{
+                Button(action: {
+                    // Birinci ok için aksiyonlar
+                    print("Birinci ok tıklandı")
+                }) {
+                    Image(systemName: "arrow.left")
+                        .padding()
+                        .font(.largeTitle)
+                        .foregroundColor(.black)
+                        .hidden()
+                }
+            }
+            .padding()
+            .font(.largeTitle)
+            
+            // ortaya alan
+            RectangleView()
+            
+            // ikinci ok
+            VStack{
+                Button(action: {
+                    // İkinci ok için aksiyonlar
+                    print("İkinci ok tıklandı")
+                }) {
+                    Image(systemName: "arrow.right")
+                        .padding()
+                        .font(.largeTitle)
+                        .foregroundColor(.black)
+                }
+            }
+            .padding()
+            .font(.largeTitle)
+        }
+        
     }
     
     //MARK: - Functions
@@ -106,7 +144,7 @@ struct SignUpWithPhoneView: View {
                 if success{
                     // ARTIK KULLANICI GİRİŞ YAPTI
                     // DİĞER SAYFAYA YÖNLENDİR
-                    showHomeView = true
+                    showPersonInfoView = true
                 }else {
                     alertMessage = "SMS Kodu Yanlış"
                     showAlert = true
