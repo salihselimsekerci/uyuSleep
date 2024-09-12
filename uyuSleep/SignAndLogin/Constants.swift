@@ -42,6 +42,11 @@ struct Constants {
     /// Metin rengi .white
     static let buttonTextColor: Color = .white
     
+    /// Text Field arka plan rengi
+    /// secondarySystemBackground
+    /// - bir extensions eklentisidir
+    static let textFieldBackgorundColor: Color = .secondarySystemBackground
+    
     //MARK: - Logo
     
     /// App logosu
