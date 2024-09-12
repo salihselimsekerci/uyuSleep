@@ -54,6 +54,7 @@ struct ApprovalView: View {
                     }
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.top)
                 
                 // Kampanya toggle
                 HStack {
@@ -85,7 +86,6 @@ struct ApprovalView: View {
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 
-                .padding()
                 
                 Button(action: {
                     goToMainView()
@@ -142,6 +142,7 @@ struct ApprovalView: View {
         if isKVKKOn && isCampaignOn && isAgreementOn {
             print("--->>> goToMainView func çalıştı")
             // TODO: - Main Sayfaya Geç
+
         } else {
             print("kullanıcı çaqqallık yapıyor olabilir!")
         }
