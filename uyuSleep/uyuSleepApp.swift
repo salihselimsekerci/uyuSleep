@@ -11,7 +11,7 @@ import SwiftUI
 struct uyuSleepApp: App {
     var body: some Scene {
         WindowGroup {
-            FirstView()
+            ApprovalView()
         }
     }
 }
