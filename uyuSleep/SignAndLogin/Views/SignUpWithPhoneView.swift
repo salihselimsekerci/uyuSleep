@@ -26,7 +26,7 @@ struct SignUpWithPhoneView: View {
     //MARK: - View
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack(spacing: 20) {
                 
                 TextField("Telefon Numarası giriniz", text: $phoneNumber)
@@ -78,6 +78,7 @@ struct SignUpWithPhoneView: View {
                 PersonInfoView()
             }
         }
+        .navigationBarBackButtonHidden(true)
         
         // ok yönleri ile sayfa geçişleri için
         HStack{

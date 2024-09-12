@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		360B426D2C935EDC0021D183 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360B426C2C935EDC0021D183 /* MainView.swift */; };
+		360B42712C935F9E0021D183 /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360B42702C935F9E0021D183 /* RectangleView.swift */; };
 		369D83CE2C92D53500DA793B /* uyuSleepApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D83CD2C92D53500DA793B /* uyuSleepApp.swift */; };
 		369D83D02C92D53500DA793B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D83CF2C92D53500DA793B /* ContentView.swift */; };
 		369D83D22C92D53600DA793B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 369D83D12C92D53600DA793B /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		360B426C2C935EDC0021D183 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		360B42702C935F9E0021D183 /* RectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
 		369D83CA2C92D53500DA793B /* uyuSleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uyuSleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		369D83CD2C92D53500DA793B /* uyuSleepApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uyuSleepApp.swift; sourceTree = "<group>"; };
 		369D83CF2C92D53500DA793B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,10 +110,12 @@
 		369D83E72C92E46700DA793B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				360B42702C935F9E0021D183 /* RectangleView.swift */,
 				369D83DD2C92D7C500DA793B /* FirstView.swift */,
 				369D83E32C92E30300DA793B /* SignUpWithPhoneView.swift */,
 				369D83ED2C92EB5600DA793B /* PersonInfoView.swift */,
 				369D83F12C930A4F00DA793B /* ApprovalView.swift */,
+				360B426C2C935EDC0021D183 /* MainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,6 +207,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				360B426D2C935EDC0021D183 /* MainView.swift in Sources */,
+				360B42712C935F9E0021D183 /* RectangleView.swift in Sources */,
 				369D83D02C92D53500DA793B /* ContentView.swift in Sources */,
 				369D83DE2C92D7C500DA793B /* FirstView.swift in Sources */,
 				369D83E42C92E30300DA793B /* SignUpWithPhoneView.swift in Sources */,
