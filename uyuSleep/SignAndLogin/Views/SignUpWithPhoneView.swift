@@ -13,6 +13,8 @@ struct SignUpWithPhoneView: View {
     
     @StateObject private var signUpWithPhoneVM = SignUpWithPhoneViewModel()
     
+    @StateObject private var personInfoVM = PersonInfoViewModel()
+
     @State private var phoneNumber: String = ""
     @State private var smsPassword: String = ""
 
@@ -130,6 +132,7 @@ struct SignUpWithPhoneView: View {
         
         signUpWithPhoneVM.signUpPhoneNumber(phoneNumber: phoneNumber) { success in
             if success {
+                personInfoVM.phoneNumberFormatter(phoneNumber: phoneNumber)
                 isNumberSuccess = true
                 smsPasswordCheck()
             }else{

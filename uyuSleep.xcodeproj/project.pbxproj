@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		360B426D2C935EDC0021D183 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360B426C2C935EDC0021D183 /* MainView.swift */; };
 		360B42712C935F9E0021D183 /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360B42702C935F9E0021D183 /* RectangleView.swift */; };
+		366A74B52C942D23002B865A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366A74B42C942D23002B865A /* Person.swift */; };
 		369D83CE2C92D53500DA793B /* uyuSleepApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D83CD2C92D53500DA793B /* uyuSleepApp.swift */; };
 		369D83D02C92D53500DA793B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369D83CF2C92D53500DA793B /* ContentView.swift */; };
 		369D83D22C92D53600DA793B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 369D83D12C92D53600DA793B /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		360B426C2C935EDC0021D183 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		360B42702C935F9E0021D183 /* RectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
+		366A74B42C942D23002B865A /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		369D83CA2C92D53500DA793B /* uyuSleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uyuSleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		369D83CD2C92D53500DA793B /* uyuSleepApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uyuSleepApp.swift; sourceTree = "<group>"; };
 		369D83CF2C92D53500DA793B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		366A74B62C942D2D002B865A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				366A74B42C942D23002B865A /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		369D83C12C92D53500DA793B = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				369D83DF2C92DCC300DA793B /* Constants.swift */,
+				366A74B62C942D2D002B865A /* Model */,
 				369D83E72C92E46700DA793B /* Views */,
 				369D83E92C92E47B00DA793B /* ViewModel */,
 			);
@@ -217,6 +228,7 @@
 				369D83F22C930A4F00DA793B /* ApprovalView.swift in Sources */,
 				369D83EE2C92EB5600DA793B /* PersonInfoView.swift in Sources */,
 				369D83E02C92DCC300DA793B /* Constants.swift in Sources */,
+				366A74B52C942D23002B865A /* Person.swift in Sources */,
 				369D83E62C92E40A00DA793B /* SignUpWithPhoneViewModel.swift in Sources */,
 				369D83F02C92EBA800DA793B /* PersonInfoViewModel.swift in Sources */,
 			);

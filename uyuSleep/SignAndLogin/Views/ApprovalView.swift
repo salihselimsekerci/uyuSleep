@@ -142,7 +142,7 @@ struct ApprovalView: View {
         if isKVKKOn && isCampaignOn && isAgreementOn {
             print("--->>> goToMainView func çalıştı")
             // TODO: - Main Sayfaya Geç
-
+            
         } else {
             print("kullanıcı çaqqallık yapıyor olabilir!")
         }
