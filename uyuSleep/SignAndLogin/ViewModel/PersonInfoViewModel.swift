@@ -22,8 +22,17 @@ class PersonInfoViewModel: ObservableObject {
         }
     }
     
+    /// Kullanıcı ismini String olarak alır ve `personData`'ya kaydeder
+    /// - Parameter name: String formatında girilen isim bilgisirdir.
+    public func nameFormatter(name: String){
+        personData.name = name
+    }
     
-    
+    /// Kullanıcı soy ismini String olarak alır ve `personData`'ya kaydeder
+    /// - Parameter surName: String formatında girilen soy isimdir.
+    public func surNameFormatter(surName: String){
+        personData.surName = surName
+    }
     
     
 }

@@ -94,6 +94,8 @@ struct PersonInfoView: View {
         formatter.dateStyle = .medium
         return formatter
     }
+    
+    
 }
 
 
