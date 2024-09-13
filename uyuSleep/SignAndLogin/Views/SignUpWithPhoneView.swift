@@ -113,6 +113,7 @@ struct SignUpWithPhoneView: View {
                         .padding()
                         .font(.largeTitle)
                         .foregroundColor(.black)
+                        .hidden()
                 }
             }
             .padding()

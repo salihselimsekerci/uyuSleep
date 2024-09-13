@@ -156,8 +156,10 @@ struct ApprovalView: View {
             print("All toggles are NOT ON")
         }
     }
+    
+    
+    
 }
-
 
 #Preview {
     ApprovalView()
