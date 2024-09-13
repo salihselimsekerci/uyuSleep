@@ -16,6 +16,15 @@ struct PersonInfoView: View {
     @State private var surNameText: String = ""
     
     @State private var selectedDate = Date()
+    @State private var isFormValid: Bool = false
+    @State private var navigateToApprovalView = false
+
+
+    private var dateFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        return formatter
+    }
     
     // MARK: - View
     var body: some View {
@@ -26,13 +35,16 @@ struct PersonInfoView: View {
                     .background(Constants.textFieldBackgorundColor)
                     .cornerRadius(Constants.buttonCornerRadius)
                     .padding(.horizontal)
+                    .onChange(of: nameText) { _ in goToApprovalView() }
+
             
                 TextField("Soy İsim Giriniz", text: $surNameText)
                     .padding()
                     .background(Constants.textFieldBackgorundColor)
                     .cornerRadius(Constants.buttonCornerRadius)
                     .padding(.horizontal)
-                
+                    .onChange(of: surNameText) { _ in goToApprovalView() }
+
                 Text("Doğum Tarihi Giriniz")
                     .padding(.top)
                 
@@ -71,11 +83,18 @@ struct PersonInfoView: View {
                     
                     // İkinci ok: İleri sayfa
                     VStack {
-                        NavigationLink(destination: ApprovalView()) {
+                        if isFormValid {
+                            NavigationLink(destination: ApprovalView(), isActive: $navigateToApprovalView) {
+                                Image(systemName: "arrow.right")
+                                    .padding()
+                                    .font(.largeTitle)
+                                    .foregroundColor(.black)
+                            }
+                        } else {
                             Image(systemName: "arrow.right")
                                 .padding()
                                 .font(.largeTitle)
-                                .foregroundColor(.black)
+                                .foregroundColor(.gray) // Geçiş yapılamaz olduğunda gri
                         }
                     }
                     .padding()
@@ -89,13 +108,23 @@ struct PersonInfoView: View {
     }
     
     // MARK: - Functions
-    private var dateFormatter: DateFormatter {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .medium
-        return formatter
+    
+    /// İsim, Soiyisim ve doğum tarihi girildiği zaman diğer sayfaya geçiş izni verir
+    private func goToApprovalView(){
+        // Form doğrulama işlemleri
+        if !nameText.isEmpty && !surNameText.isEmpty {
+            isFormValid = true
+        } else {
+            isFormValid = false
+        }
     }
-    
-    
+
+    /// PersonData'ya verileri kaydetmek için tetiklenen fonksiyon
+    private func handleNextAction() {
+        personInfoVM.nameFormatter(name: nameText)
+        personInfoVM.surNameFormatter(surName: surNameText)
+    }
+
 }
 
 
