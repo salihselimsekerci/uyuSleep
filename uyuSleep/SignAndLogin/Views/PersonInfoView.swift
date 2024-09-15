@@ -64,42 +64,7 @@ struct PersonInfoView: View {
                 Text("Selected date: \(selectedDate, formatter: dateFormatter)")
                     .padding()
                 
-                // Ok yönleri ile sayfa geçişleri için
-                HStack {
-                    // Birinci ok: Geri sayfa
-                    VStack {
-                        NavigationLink(destination: SignUpWithPhoneView()) {
-                            Image(systemName: "arrow.left")
-                                .padding()
-                                .font(.largeTitle)
-                                .foregroundColor(.black)
-                        }
-                    }
-                    .padding()
-                    .font(.largeTitle)
-                    
-                    // Ortaya alan
-                    RectangleView()
-                    
-                    // İkinci ok: İleri sayfa
-                    VStack {
-                        if isFormValid {
-                            NavigationLink(destination: ApprovalView(), isActive: $navigateToApprovalView) {
-                                Image(systemName: "arrow.right")
-                                    .padding()
-                                    .font(.largeTitle)
-                                    .foregroundColor(.black)
-                            }
-                        } else {
-                            Image(systemName: "arrow.right")
-                                .padding()
-                                .font(.largeTitle)
-                                .foregroundColor(.gray) // Geçiş yapılamaz olduğunda gri
-                        }
-                    }
-                    .padding()
-                    .font(.largeTitle)
-                }
+                RegistrationProgressView(selectedIndex: 1)
                 
             }
             .padding()

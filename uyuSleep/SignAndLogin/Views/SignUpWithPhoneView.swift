@@ -83,42 +83,7 @@ struct SignUpWithPhoneView: View {
         .navigationBarBackButtonHidden(true)
         
         // ok yönleri ile sayfa geçişleri için
-        HStack{
-            // birinci ok
-            VStack{
-                Button(action: {
-                    // Birinci ok için aksiyonlar
-                    print("Birinci ok tıklandı")
-                }) {
-                    Image(systemName: "arrow.left")
-                        .padding()
-                        .font(.largeTitle)
-                        .foregroundColor(.black)
-                        .hidden()
-                }
-            }
-            .padding()
-            .font(.largeTitle)
-            
-            // ortaya alan
-            RectangleView()
-            
-            // ikinci ok
-            VStack{
-                Button(action: {
-                    // İkinci ok için aksiyonlar
-                    print("İkinci ok tıklandı")
-                }) {
-                    Image(systemName: "arrow.right")
-                        .padding()
-                        .font(.largeTitle)
-                        .foregroundColor(.black)
-                        .hidden()
-                }
-            }
-            .padding()
-            .font(.largeTitle)
-        }
+        RegistrationProgressView(selectedIndex: 0)
         
     }
     

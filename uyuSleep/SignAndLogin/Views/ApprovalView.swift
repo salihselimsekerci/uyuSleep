@@ -100,35 +100,7 @@ struct ApprovalView: View {
                 .padding()
                 .disabled(!isButtonEnabled)
                 
-                // Ok yönleri ile sayfa geçişleri için
-                HStack {
-                    // Birinci ok
-                    VStack {
-                        NavigationLink(destination: PersonInfoView()) {
-                            Image(systemName: "arrow.left")
-                                .padding()
-                                .font(.largeTitle)
-                                .foregroundColor(.black)
-                        }
-                    }
-                    .padding()
-                    .font(.largeTitle)
-                    
-                    // Ortaya alan
-                    RectangleView()
-                    
-                    // İkinci ok
-                    VStack {
-                        NavigationLink(destination: MainView()) {
-                            Image(systemName: "arrow.right")
-                                .padding()
-                                .font(.largeTitle)
-                                .foregroundColor(.black)
-                        }
-                    }
-                    .padding()
-                    .font(.largeTitle)
-                }
+                RegistrationProgressView(selectedIndex: 2)
                 
             }
             .padding()
