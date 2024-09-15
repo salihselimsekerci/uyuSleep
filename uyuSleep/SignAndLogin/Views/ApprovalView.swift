@@ -54,8 +54,8 @@ struct ApprovalView: View {
                     }
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.top)
-                
+                .padding(.horizontal)
+
                 // Kampanya toggle
                 HStack {
                     Toggle(isOn: $isCampaignOn) {
@@ -70,6 +70,7 @@ struct ApprovalView: View {
                     Spacer()
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.horizontal)
                 
                 // Kabul toggle
                 HStack {
@@ -85,7 +86,7 @@ struct ApprovalView: View {
                     Spacer()
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
-                
+                .padding(.horizontal)
                 
                 Button(action: {
                     goToMainView()
@@ -128,8 +129,6 @@ struct ApprovalView: View {
             print("All toggles are NOT ON")
         }
     }
-    
-    
     
 }
 
